@@ -1,0 +1,50 @@
+<!doctype html>
+<style type="text/css">
+
+	body {
+		background: url('icons/shattered.png');
+	}
+
+	p {
+		font-family: Segoe UI, Open Sans, sans-serif, serif;
+		display: inline;
+		font-size: 16px;
+	}
+
+
+	#count p {
+		font-size: 15px;
+	}
+
+
+	body{
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+	input[type='checkbox'] {
+    height: 13px;
+    position: relative;
+    vertical-align: middle;
+    width: 13px;
+		margin-top: 0px;
+}
+</style>
+
+<body>
+	<div style="padding: 5px;height: 95px;width: 270px;  " background =chrome.extension.getURL("icons/shattered.png")>
+		<div id="logo" style="text-align:center;">
+			<img src="icons/icon48.png" alt="9TAG" />
+		</div>
+		<div>
+			<p style="display: inline;font-size: 16px;">Continue session automatically</p>&nbsp;&nbsp;
+			<input id="chkAutoRedirect" type="checkbox"  />
+		</div>
+		<div >
+			<p style="display: inline;font-size: 16px;">Posts browsed: <span style="text-decoration:underline" id="count">Loading</span></p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="popup.js"></script>
+
+
+</body>
